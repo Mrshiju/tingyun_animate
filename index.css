@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%；
+}
+
+#content {
+    width: 100%;
+    height: 1000px;
+    background: url(./image/bg06.png) no-repeat;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.middle_P {
+    margin: auto;
+    line-height: 1000px;
+    position: absolute;
+}
+
+.left_top {
+    position: absolute;
+}
+
+.left_bottom {
+    position: absolute;
+}

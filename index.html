@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="ty-view-box">
+        <div class="ty-view-browser ty-view-clear ty-view-browser-hover" name="hoverDiv"></div>
+        <div class="ty-view-app ty-view-clear ty-view-app-hover" name="hoverDiv">
+            <!-- <div class="ty-view-app-div"></div> -->
+        </div>
+        <div class="ty-view-network ty-view-clear ty-view-network-hover" name="hoverDiv"></div>
+        <div class="ty-view-server ty-view-clear ty-view-server-hover" name="hoverDiv"></div>
+        <div class="ty-view-web">
+            <img src="./image/ty-view-web.png">
+        </div>
+        <div class="ty-view-cardbox">
+            <div class="ty-view-browsercard" style="opacity: 1; display: none;">
+                <img src="./image/ty-view-browsercard.png">
+            </div>
+            <div class="ty-view-appcard" style="opacity: 1; display: none;">
+                <img src="./image/ty-view-appcard.png">
+            </div>
+            <div class="ty-view-networkcard" style="display: block; opacity: 1;">
+                <img src="./image/ty-view-networkcard.png">
+            </div>
+            <div class="ty-view-servercard" style="display: none; opacity: 1;">
+                <img src="./image/ty-view-servercard.png">
+            </div>
+        </div>
+        <div id="achor1" class="ty-view-arrow ty-view-arrow1 move_1"></div>
+        <div id="achor2" class="ty-view-arrow ty-view-arrow2 move_2"></div>
+        <div id="achor3" class="ty-view-arrow ty-view-arrow3 move_3"></div>
+        <div id="achor5" class="ty-view-arrow ty-view-arrow5 move_4"></div>
+        <div id="achor6" class="ty-view-arrow ty-view-arrow6 move_5"></div>
+        <div id="achor7" class="ty-view-arrow ty-view-arrow7 move_6"></div>
+        <div id="achor8" class="ty-view-arrow ty-view-arrow8 move_7"></div>
+        <div id="achor9" class="ty-view-arrow ty-view-arrow9 move_8"></div>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        //动画自动播放
+        let length = $(".ty-view-box div[name='hoverDiv']").length;
+        let index = 0;
+
+        function moveTo() {
+            if (index > 3) {
+                index = 0
+            }
+            index++;
+            let res = $(".ty-view-box div[name='hoverDiv']").eq(index - 1);
+            // console.log(ress);
+            let name = res.attr("class");
+            for (let i = 0; i < length; i++) {
+                // if (i !== index) {
+                let res = $(".ty-view-box div[name='hoverDiv']").eq(i);
+                // console.log(ress);
+                let name = res.attr("class");
+                // res.addClass(name.split(" ")[0] + "-hover")
+                res.removeClass(name.split(" ")[2]);
+
+                // } else {}
+            }
+            // res.removeClass(name.split(" ")[2]);
+            res.addClass(name.split(" ")[0] + "-hover")
+
+            $(".ty-view-cardbox div").eq(index - 1).css({
+                "display": "block"
+            }).siblings().css({
+                "display": "none"
+            })
+        }
+        var t1 = setInterval(moveTo, 1000);
+        $(".ty-view-box").on("mouseover", "div[name='hoverDiv']", function(e) {
+            clearInterval(t1);
+            let length = $(".ty-view-box div[name='hoverDiv']").length;
+            let index = 0;
+            for (let i = 0; i < length; i++) {
+                let res = $(".ty-view-box div[name='hoverDiv']").eq(i);
+                let name = res.attr("class");
+                res.removeClass(name.split(" ")[2]);
+            }
+            $(e.target).addClass($(e.target).attr("class").split(" ")[0] + "-hover");
+            let t = $(e.target).attr("class").split(" ")[0];
+            t = `.${t}card`;
+            $(t).css({
+                "display": "block"
+            }).siblings().css({
+                "display": "none"
+            })
+
+
+        })
+        $(".ty-view-box").on("mouseout", "div[name='hoverDiv']", function() {
+            t1 = setInterval(moveTo, 1000);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+.ty-section-div {
+    width: 980px;
+    height: 140px;
+    overflow: hidden;
+    margin: 50px 0 35px;
+    position: relative
+}
+
+.ty-section-ul {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.ty-section-ul,
+.ty-section-ul>li {
+    width: 1100px;
+    height: 140px
+}
+
+.ty-section-ul>li {
+    margin: 0;
+    float: none;
+    border: 0;
+    width: 980px;
+    height: 140px;
+    background: url(./image/ty-logo_bigbj.jpg) no-repeat
+}
+
+.ty-section-ul .ty-section-otheruser1 {
+    background-position: left 0
+}
+
+.ty-section-ul .ty-section-otheruser2 {
+    background-position: left -140px
+}
+
+.ty-section-ul .ty-section-otheruser3 {
+    background-position: left -280px
+}
+
+.ty-view-box {
+    width: 970px;
+    height: 575px;
+    margin: 0 auto;
+    position: absolute;
+    background: url(./image/ty-view-bg.png) no-repeat 234px 66px
+}
+
+.ty-view-browser {
+    width: 246px;
+    height: 177px;
+    background: url(./image/ty-view-browser.png) no-repeat;
+    position: absolute;
+    top: 315px;
+    left: 42px;
+    z-index: 60;
+    cursor: pointer
+}
+
+.ty-view-app {
+    width: 244px;
+    height: 152px;
+    background: url(./image/ty-view-app.png) no-repeat;
+    position: absolute;
+    top: 422px;
+    left: 185px;
+    z-index: 70
+}
+
+.ty-view-network {
+    width: 378px;
+    height: 225px;
+    background: url(./image/ty-view-network.png) no-repeat;
+    position: absolute;
+    top: 249px;
+    left: 213px;
+    z-index: 50;
+    cursor: pointer
+}
+
+.ty-view-server {
+    width: 397px;
+    height: 256px;
+    background: url(./image/ty-view-server.png) no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 572px;
+    z-index: 90;
+    cursor: pointer
+}
+
+.ty-view-web {
+    width: 73px;
+    height: 108px;
+    position: absolute;
+    top: 158px;
+    left: 576px;
+    z-index: 100
+}
+
+.ty-view-browser-hover {
+    background: url(./image/ty-view-browser-h.png) no-repeat
+}
+
+.ty-view-app-hover {
+    background: url(./image/ty-view-app-h.png) no-repeat
+}
+
+.ty-view-server-hover {
+    background: url(./image/ty-view-server-h.png) no-repeat
+}
+
+.ty-view-network-hover {
+    background: url(./image/ty-view-network-h.png) no-repeat
+}
+
+.ty-view-cardbox {
+    width: 970px;
+    height: 575px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10
+}
+
+.ty-view-browsercard {
+    width: 456px;
+    height: 394px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    z-index: 15
+}
+
+.ty-view-appcard {
+    width: 397px;
+    height: 504px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15
+}
+
+.ty-view-networkcard {
+    width: 490px;
+    height: 185px;
+    position: absolute;
+    top: 430px;
+    left: 481px;
+    z-index: 15
+}
+
+.ty-view-servercard {
+    width: 243px;
+    height: 324px;
+    position: absolute;
+    bottom: -10px;
+    right: 110px;
+    z-index: 15
+}
+
+.ty-view-note {
+    position: relative
+}
+
+.view-p02 {
+    margin-top: 0;
+    display: none
+}
+
+.view-p02.current {
+    display: block
+}
+
+.ty-view-arrow {
+    width: 13px;
+    height: 9px;
+    font-size: 0;
+    position: absolute;
+    z-index: 200
+}
+
+.ty-view-arrow1 {
+    top: 387px;
+    left: 232px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    background-position: left 0
+}
+
+.ty-view-arrow2 {
+    top: 461px;
+    left: 358px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    opacity: 1;
+    /* filter: alpha(opacity=0); */
+    background-position: left 0
+}
+
+.ty-view-arrow3 {
+    top: 366px;
+    left: 383px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    background-position: left -20px
+}
+
+.ty-view-arrow4 {
+    top: 390px;
+    left: 426px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    background-position: left -10px
+}
+
+.ty-view-arrow5 {
+    top: 329px;
+    left: 444px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    background-position: left 0
+}
+
+.ty-view-arrow6 {
+    top: 149px;
+    left: 760px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    background-position: left 0
+}
+
+.ty-view-arrow7 {
+    top: 144px;
+    left: 768px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    /* opacity: 0; */
+    /* filter: alpha(opacity=0); */
+    background-position: left -10px
+}
+
+.ty-view-arrow8 {
+    top: 144px;
+    left: 770px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    /* opacity: 0;
+    filter: alpha(opacity=0); */
+    background-position: left 0;
+    animation: moveUp 2s infinite;
+}
+
+.ty-view-arrow9 {
+    top: 146px;
+    left: 772px;
+    background: url(./image/ty-view-achor.png) no-repeat;
+    /* opacity: 0; */
+    /* filter: alpha(opacity=0); */
+    background-position: left -20px;
+    animation: move 2s infinite;
+}
+
+.ty-view-app-div {
+    width: 244px;
+    height: 100px;
+    margin-top: 52px;
+    cursor: pointer
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(110px, 60px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(110px, 60px) rotate(-90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(140px, 45px) rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-110px, -60px);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-110px, -60px) rotate(-180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-140px, -45px) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+
+/* @keyframes move1{
+    form{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    to{
+
+    }
+} */
